@@ -2,17 +2,23 @@
 <html>
 <head>
 	<title>The Publik Library</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
 <style type="text/css">
 	body{
 		font-family: courier-new;
 		margin: 0px; 
 		overflow-x: hidden;
+		background-color: #F6F6F6; 
 	}
 	@font-face {
   font-family: courier-new;
   src: url(fonts/courier-new.otf);
 }
 img{
+	width: 100%; 
+}
+li img{
 	width: 100%; 
 }
 	#pl-logo{
@@ -24,38 +30,78 @@ img{
 
 p{
 	/*text-align: center;*/
-	font-family: courier; 
+	font-family/*:*/ courier; 
 }
 ul{
 	width: 100%; 
 	margin-top: 2%; 
 	list-style-type:none;
 }
-li{
-	width: 20%; 
-	display: block; 
-	float: left; 
-	margin-right: 5%; 
-	min-height: 10vh; 
-	
-}
-.content{
-	min-height: 90vh; 
-}
 a{
-	text-decoration: none; 
-	color: black;
-	/*background-color: yellow;  */
+		text-decoration: none; 
+		color: black;
+		/*background-color: yellow;  */
+	}
+	a:hover {
+	  background-color: yellow;
+	}
+
+	#copyright{
+		width: 100%;
+		text-align: center;
+	}
+/*desktop styles*/
+@media screen and (min-width: 768px) {
+
+	li{
+		width: 20%; 
+		display: block; 
+		float: left; 
+		margin-right: 5%; 
+		min-height: 10vh; 
+		-webkit-hyphens: auto;
+	  -ms-hyphens: auto;
+	  hyphens: auto;
+		  /*text-align: justify;*/
+
+		
+	}
+	.content{
+		min-height: 90vh; 
+	}
+	
+	.first{
+		/*margin-left: 2.5%; */
+	}
+	.last{
+		margin-right: 2%; 
+	}
+	.mobile-only{
+		display: none; 
+	}
+
 }
-a:hover {
-  background-color: yellow;
+/*mobile styles*/
+
+@media screen and (max-width: 769px) {
+li{
+		width: 90%; 
+		display: block; 
+		float: left; 
+		margin-left: -2.5%;
+		/*margin-right: 5%; */
+		/*min-height: 10vh; */
+		-webkit-hyphens: auto;
+	  -ms-hyphens: auto;
+	  hyphens: auto;
+	  margin-bottom: 20%; 
+		
+	}
+	.none{
+		display: none; 
+	}
 }
-.first{
-	/*margin-left: 2.5%; */
-}
-.last{
-	margin-right: 0%; 
-}
+
 </style>
 
 </head>
@@ -77,13 +123,13 @@ a:hover {
 <ul>
 <!-- row 01 -->
 
-	<li class="first"><img id="pl-logo" src="images/pl-logo.png"></li>
-	<li><br></li>
-	<li><br></li>
-	<li class="last"><br></li>
+	<li class="first"><img id="pl-logo" src="images/pl-logo-01.png"></li>
+	<li class="none"><br></li>
+	<li class="none"><br></li>
+	<li class="last none"><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br><br></li>
 
 <!-- row 02 -->
-	<li class="content first"><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br></li>
+	<li class="content first none"><br></li>
 	<li class="content">
 		<a href="">The Stacks</a><br>
 		–<br><br>
@@ -94,7 +140,10 @@ a:hover {
 		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.
 	</li>
 	<li class="content">
-		<a href="">The Book Fair - 001</a><br>
+		<a href="">The Book Fair - 001<br>
+		April 26th <br>
+		2-6PM EST <br>
+		</a>
 		–<br><br>
 		The Book Fair is Lorem ipsum dolor sit amet, consectetur adipiscing  ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscing elit. 
 		<br><br>
@@ -103,17 +152,22 @@ a:hover {
 		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.</a>
 	</li>
 	<li class="last content" >
-		The Publik Library is a shared initiative by School, Educated Guess, and Research+Development.
-		
+		The Publik Library is a shared initiative by School, Educated Guess, and Research + Development.		
 	</li>
+	<li class="mobile-only"><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br><br></li>
 
 	<!-- row 03 -->
 
-	<li></li>
-	<li><br></li>
-	<li><br></li>
-	<li class="last"><br></li>
+	<li>
+		<br><br>
+		©(Y)ours 2020
+	</li>
+	<li class="none"><br></li>
+	<li class="none"><br></li>
+	<li class="last none"><br></li>
+
 
 </ul>
+<p id="copyright"> </p>
 </body>
 </html>
