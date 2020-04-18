@@ -37,6 +37,10 @@ time, mark, audio, video {
   font-family: courier-new;
   src: url(fonts/courier-new.otf);
 }
+	@font-face {
+  font-family: baskerville;
+  src: url(fonts/baskerville.otf);
+}
 img{
 	width: 100%; 
 }
@@ -44,7 +48,8 @@ li img{
 	width: 100%; 
 }
 	#pl-logo{
-		width: 100%; 
+		width: 20%; 
+		position: fixed;
 		/*margin-left: 5%;*/
 		/*margin-left: 35%; */
 		/*margin-top: 5%; */
@@ -58,6 +63,8 @@ ul{
 	width: 100%; 
 	margin-top: 2%; 
 	list-style-type:none;
+	margin-left: 2.5%;
+
 }
 a{
 		text-decoration: none; 
@@ -72,6 +79,13 @@ a{
 		width: 100%;
 		text-align: center;
 	}
+/*	.title{
+		font-family: baskerville;
+		font-size: 1.2vw; 
+		text-transform: uppercase;
+		color: grey; 
+}*/
+	
 /*desktop styles*/
 @media screen and (min-width: 768px) {
 
@@ -159,25 +173,26 @@ li{
 <!-- row 02 -->
 	<li class="content first none"><br></li>
 	<li class="content">
-		<a href="">The Stacks</a><br>
+		<a href=""><span class="title">The Stacks</span></a><br>
 		–<br><br>
 		The Stacks are Lorem ipsum dolor sit amet, consectetur adipiscing pharetra ex sed quam pretium elit. 
 		<br><br>
 		<img id="" src="images/stacks-01.jpg">
 		<br><br>
-		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.
+		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.	
 	</li>
 	<li class="content">
-		<a href="">The Book Fair - 001<br>
+		<a href=""><span class="title">The Book Fair - 001</a></span><br>
+			–<br>
 		April 26th <br>
 		2-6PM EST <br>
-		</a>
+		
 		–<br><br>
 		The Book Fair is Lorem ipsum dolor sit amet, consectetur adipiscing  ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscing elit. 
 		<br><br>
 		<img id="" src="images/bf-01.png">
 		<br><br>
-		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.</a>
+		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.</a>					
 	</li>
 	<li class="last content" >
 		The Publik Library is a shared initiative by School, Educated Guess, and Research + Development.
