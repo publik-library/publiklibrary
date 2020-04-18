@@ -3,21 +3,65 @@
 <head>
 	<title>The Publik Library</title>
 <style type="text/css">
-	#pl-logo{
-		width: 30%; 
-		margin-left: 35%; 
-		margin-top: 5%; 
+	body{
+		font-family: courier-new;
+		margin: 0px; 
+		overflow-x: hidden;
 	}
+	@font-face {
+  font-family: courier-new;
+  src: url(fonts/courier-new.otf);
+}
+img{
+	width: 100%; 
+}
+	#pl-logo{
+		width: 100%; 
+		/*margin-left: 5%;*/
+		/*margin-left: 35%; */
+		/*margin-top: 5%; */
+	}
+
 p{
-	text-align: center;
+	/*text-align: center;*/
 	font-family: courier; 
+}
+ul{
+	width: 100%; 
+	margin-top: 2%; 
+	list-style-type:none;
+}
+li{
+	width: 20%; 
+	display: block; 
+	float: left; 
+	margin-right: 5%; 
+	min-height: 10vh; 
+	
+}
+.content{
+	min-height: 90vh; 
+}
+a{
+	text-decoration: none; 
+	color: black;
+	/*background-color: yellow;  */
+}
+a:hover {
+  background-color: yellow;
+}
+.first{
+	/*margin-left: 2.5%; */
+}
+.last{
+	margin-right: 0%; 
 }
 </style>
 
 </head>
 <body>
-<img id="pl-logo" src="images/pl-logo.png">
-<p>
+
+<!-- <p>
 	<br>
 
 	The Stacks
@@ -26,6 +70,50 @@ p{
 	<br><br>
 	@publik.library
 	
-</p>
+</p> -->
+
+<!-- <div><img id="pl-logo" src="images/pl-logo.png"></div> -->
+
+<ul>
+<!-- row 01 -->
+
+	<li class="first"><img id="pl-logo" src="images/pl-logo.png"></li>
+	<li><br></li>
+	<li><br></li>
+	<li class="last"><br></li>
+
+<!-- row 02 -->
+	<li class="content first"><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br></li>
+	<li class="content">
+		<a href="">The Stacks</a><br>
+		–<br><br>
+		The Stacks are Lorem ipsum dolor sit amet, consectetur adipiscing pharetra ex sed quam pretium elit. 
+		<br><br>
+		<img id="" src="images/stacks-01.jpg">
+		<br><br>
+		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.
+	</li>
+	<li class="content">
+		<a href="">The Book Fair - 001</a><br>
+		–<br><br>
+		The Book Fair is Lorem ipsum dolor sit amet, consectetur adipiscing  ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscing elit. 
+		<br><br>
+		<img id="" src="images/bf-01.png">
+		<br><br>
+		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.</a>
+	</li>
+	<li class="last content" >
+		The Publik Library is a shared initiative by School, Educated Guess, and Research+Development.
+		
+	</li>
+
+	<!-- row 03 -->
+
+	<li></li>
+	<li><br></li>
+	<li><br></li>
+	<li class="last"><br></li>
+
+</ul>
 </body>
 </html>
