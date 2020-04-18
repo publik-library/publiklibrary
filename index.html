@@ -32,6 +32,7 @@ time, mark, audio, video {
 		margin: 0px; 
 		overflow-x: hidden;
 		background-color: #F6F6F6; 
+		line-height: 19px; 
 	}
 	@font-face {
   font-family: courier-new;
@@ -47,7 +48,11 @@ img{
 li img{
 	width: 100%; 
 }
-	
+	.title{
+		/*background-color: black; 
+		color: white; */
+
+	}
 
 p{
 	/*text-align: center;*/
@@ -63,6 +68,8 @@ ul{
 a{
 		text-decoration: none; 
 		color: black;
+		border-bottom:  solid black  1px; 
+		
 		/*background-color: yellow;  */
 	}
 	a:hover {
@@ -79,6 +86,60 @@ a{
 		text-transform: uppercase;
 		color: grey; 
 }*/
+
+.blinking {
+  -webkit-animation: 1s blink ease infinite;
+  -moz-animation: 1s blink ease infinite;
+  -ms-animation: 1s blink ease infinite;
+  -o-animation: 1s blink ease infinite;
+  animation: 1s blink ease infinite;
+  
+}
+
+@keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 	
 /*desktop styles*/
 @media screen and (min-width: 768px) {
@@ -100,12 +161,10 @@ a{
 		-webkit-hyphens: auto;
 	  -ms-hyphens: auto;
 	  hyphens: auto;
-		  /*text-align: justify;*/
-
-		
+		  text-align: justify;
 	}
 	.content{
-		min-height: 90vh; 
+		min-height: 110vh; 
 	}
 	
 	.first{
@@ -133,7 +192,7 @@ li{
 	  -ms-hyphens: auto;
 	  hyphens: auto;
 	  margin-bottom: 20%; 
-		
+text-align: justify;
 	}
 	#pl-logo{
 		margin-top: 5%;  
@@ -170,36 +229,41 @@ li{
 	<li class="first"><img id="pl-logo" src="images/pl-logo-00.png"></li>
 	<li class="none"><br></li>
 	<li class="none"><br></li>
-	<li class="last none"><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br><br></li>
+	<li class="last none"><!-- <a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a> --><br><br></li>
 
 <!-- row 02 -->
 	<li class="content first none"><br></li>
 	<li class="content">
 		<a href=""><span class="title">The Stacks</span></a><br>
-		–<br><br>
-		The Stacks are Lorem ipsum dolor sit amet, consectetur adipiscing pharetra ex sed quam pretium elit. 
+		<!-- – --><br><br>
+		The Stacks exists as a public archive of the things (books, films, artworks, lectures, places, people, etc, etc) that have shaped the paths of top working creatives. 
 		<br><br>
 		<img id="" src="images/stacks-01.jpg">
 		<br><br>
-		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.	
+		Those “things” are organized into folders bearing the names of creatives who’ve filled them with the inputs and inspirations that have had a significant impact on their lives. These folders are open to the public for anyone to dig through. Their content can act as a catalyst for inquiry and learning. The goal is to create an ever evolving depository of inputs that can offer an ever growing source of insights for young creatives and life long students. 
+		<br><br> 
+		<a href="">Visit The Stacks</a>
 	</li>
 	<li class="content">
 		<a href=""><span class="title">The Book Fair - 001</a></span><br>
-			–<br>
-		April 26th <br>
-		2-6PM EST <br>
+			<!-- – --><br>
+		April 26th, 2-6PM EST <svg height="9" width="9" class="blinking">
+  <circle cx="5" cy="5" r="4" fill="red" />
+</svg> <br>
 		
-		–<br><br>
-		The Book Fair is Lorem ipsum dolor sit amet, consectetur adipiscing  ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscing elit. 
+		<!-- – --><br><br>
+		The Book Fair is a quarterly lecture series where selected contributors to The Stacks talk about the inputs and inspirations that have had a significant impact on their lives and careers.
 		<br><br>
 		<img id="" src="images/bf-01.png">
 		<br><br>
-		Curabitur pharetra ex sed quam pretium facilisis. Sed aliquam metus et pretium luctus. Quisque eget justo vitae sem consectetur mattis id gravida elit. Duis nec nunc sem. Aenean ultricies dui nec luctus consequat. Maecenas placerat auctor gravida. Integer auctor dictum sodales.</a>					
+		  The Book Fair is open and free to the public. The virtual nature of these events are partly fueled by the situation we find ourselves in, partly because using the power of the web helps democratize these talks. After the virtual event the talks will be archived on The Stacks in their respective folders. Our first group of speakers on April 26th will be the creative director of PLAYLAB Inc, <a href="https://www.instagram.com/publik.library/" target="_blank">Archie Lee Coates IV</a>, illustrator & art director <a href="https://www.instagram.com/publik.library/" target="_blank">Simone Noronha</a>, award winning curator and writer <a href="https://www.instagram.com/publik.library/" target="_blank">Sara Raza</a>, and artist & partner at School - <a href="https://www.instagram.com/publik.library/" target="_blank">Andrew Herzog</a>.
+		<br><br> 
+		<a href="">RSVP for The Book Fair </a>				
 	</li>
 	<li class="last content" >
-		The Publik Library is a shared initiative by School, Educated Guess, and Research + Development.
-		<br><br>
-		<span class="mobile-only"><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br><br></span>		
+		The Publik Library is a collaborative initiative by School, Educated Guess, and Research + Development.<br>
+		–<br><br>
+		<span class=""><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a><br><br></span>		
 	</li>
 	
 
