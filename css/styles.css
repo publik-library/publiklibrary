@@ -69,7 +69,7 @@ a{
 		background-color: #BFDFF6;  
 	}
 	a:hover {
-	  background-color: yellow;
+	  background-color:  #F6F6F6;
 	}
 
 	#copyright{
@@ -136,6 +136,21 @@ a{
   50% {
     opacity: 1;
   }
+}
+
+.important-01{
+	background-color: #F9F9AC; 
+	/*yellow*/
+}
+
+.important-02{
+	background-color: #ACF9AC;
+	/*green*/
+}
+
+.important-03{
+	background-color: #F5DED8;
+	/*pink*/
 }
 	
 /*desktop styles*/
