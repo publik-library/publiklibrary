@@ -2,316 +2,95 @@
 <html>
 <head>
 	<title>The Publik Library</title>
-<meta content="width=device-width, initial-scale=1" name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<style type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="This is the archive of Andrew Herzog's work">
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="all"></link>
+	<link rel="shortcut icon" href="images/favicon.png">
 
-	html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-	body{
-		font-family: courier-new;
-		margin: 0px; 
-		overflow-x: hidden;
-		background-color: #F6F6F6; 
-		line-height: 19px; 
-	}
-	@font-face {
-  font-family: courier-new;
-  src: url(fonts/courier-new.otf);
-}
-	@font-face {
-  font-family: baskerville;
-  src: url(fonts/baskerville.otf);
-}
-img{
-	width: 100%; 
-}
-video{
-	width: 100%; 
-}
-li img{
-	width: 100%; 
-}
-	.title{
-		/*background-color: black; 
-		color: white; */
-		border-bottom:  solid black  1px; 
-	}
-
-p{
-	/*text-align: center;*/
-	font-family/*:*/ courier; 
-}
-ul{
-	width: 100%; 
-	margin-top: 2%; 
-	list-style-type:none;
-	margin-left: 2.5%;
-
-}
-a{
-		text-decoration: none; 
-		color: black;
-		border-bottom:  solid black  1px; 
-		cursor: pointer;
-
-/*		background-color: white;  */
-	}
-	a:hover {
-	  background-color: yellow;
-	}
-
-	#copyright{
-		width: 100%;
-		text-align: center;
-	}
-/*	.title{
-		font-family: baskerville;
-		font-size: 1.2vw; 
-		text-transform: uppercase;
-		color: grey; 
-}*/
-
-.blinking {
-  -webkit-animation: 1s blink ease infinite;
-  -moz-animation: 1s blink ease infinite;
-  -ms-animation: 1s blink ease infinite;
-  -o-animation: 1s blink ease infinite;
-  animation: 1s blink ease infinite;
-  
-}
-
-@keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
+	  <meta name="author"              content="The Publik Library">
+	  <meta property="og:url"          content="publiklibrary.org">
 	
-/*desktop styles*/
-@media screen and (min-width: 768px) {
 
-		#pl-logo{
-		width: 20%; 
-		position: fixed;
-		/*margin-left: 5%;*/
-		/*margin-left: 35%; */
-		/*margin-top: 5%; */
-	}
+	  <meta name="name" content="The Publik Library">
+	  <meta name="description" content="The Publik Library is a shared initiative by School, Educated Guess, and Research + Development">
+	  <meta name="image" content="https://i.imgur.com/zPlrGYI.png">
+	  
+	  <meta itemprop="name" content="The Publik Library | A creative accessibility initiative">
+	  <meta itemprop="description" content="he Publik Library is a shared initiative by School, Educated Guess, and Research + Development">
+	  <meta itemprop="image" content="https://i.imgur.com/zPlrGYI.png">
 
-	li{
-		width: 20%; 
-		display: block; 
-		float: left; 
-		margin-right: 5%; 
-		min-height: 10vh; 
-		-webkit-hyphens: auto;
-	  -ms-hyphens: auto;
-	  hyphens: auto;
-		  text-align: justify;
+	  <meta name="twitter:card" content="summary">
+	  <meta name="twitter:title" content="The Publik Library | A creative accessibility initiative">
+	  <meta name="twitter:description" content="The Publik Library is a shared initiative by School, Educated Guess, and Research + Development">
+	  <meta name="twitter:image:src" content="https://i.imgur.com/zPlrGYI.png">
 
-	}
-	.content{
-		min-height: 110vh; 
-	}
-	
-	.first{
-		/*margin-left: 2.5%; */
-	}
-	.last{
-		margin-right: 2%; 
-	}
-	.mobile-only{
-		display: none; 
-	}
-	.end-line{
-		font-size: .9vw; 
-		color: grey; 
-	}
-
-}
-/*mobile styles*/
-
-@media screen and (max-width: 769px) {
-li{
-		width: 90%; 
-		display: block; 
-		float: left; 
-		margin-left: 2.5%;
-		/*margin-right: 5%; */
-		/*min-height: 10vh; */
-		-webkit-hyphens: auto;
-	  -ms-hyphens: auto;
-	  hyphens: auto;
-	  margin-bottom: 20%; 
-text-align: justify;
-	}
-	#pl-logo{
-		margin-top: 5%;  
-		/*margin-left: 5%;*/
-		/*margin-left: 35%; */
-		/*margin-top: 5%; */
-	}
-	.none{
-		display: none; 
-	}
-	.end-line{
-		font-size: 4vw; 
-		color: grey; 
-	}
-}
-
-</style>
+	  <meta name="og:title" content="The Publik Library | A creative accessibility initiative">
+	  <meta name="og:description" content="The Publik Library is a shared initiative by School, Educated Guess, and Research + Development">
+	  <meta name="image" property="og:image" content="https://i.imgur.com/TRgcgru.png"> 
 
 </head>
 <body>
-
-<!-- <p>
-	<br>
-
-	The Stacks
-	<br><br>
-	The Book Fair
-	<br><br>
-	@publik.library
-	
-</p> -->
-
-<!-- <div><img id="pl-logo" src="images/pl-logo.png"></div> -->
-
 <ul>
-<!-- row 01 -->
+	<!-- row 01 -->
 
 	<li class="first"><img id="pl-logo" src="images/pl-logo-00.png"></li>
 	<li class="none"><br></li>
 	<li class="none"><br></li>
-	<li class="last none"><!-- <a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a> --><br><br></li>
+	<li class="last none"><br></li>
 
-<!-- row 02 -->
+	<!-- row 02 -->
+
 	<li class="content first none"><br></li>
 	<li class="content">
-		<!-- <a href="https://drive.google.com/drive/folders/1J4O2DzwnS-muHgtJOtoZWUpnSfGTU-g_?usp=sharing"> --><span class="title">The Stacks</span><!-- </a> --><br>
-		<!-- – --><br><br>
-		The Stacks exists as a public archive of the things (books, films, artworks, lectures, places, people, etc, etc) that have shaped the paths of top working creatives. 
-		<br><br>
-		<video playsinline  autoplay loop muted> 
-		  <source src="images/stacks-01.mp4" type="video/mp4">		  
-		</video>
-		<!-- <img id="" src="images/stacks-01.jpg"> -->
-		<br><br>
-		Those “things” are organized into folders bearing the names of creatives who’ve filled them with the inputs and inspirations that have had a significant impact on their lives. These folders are open to the public for anyone to dig through. Their content can act as a catalyst for inquiry and learning. The goal is to create an ever evolving depository of inputs that can offer an ever growing source of insights for young creatives and life long students. 
-		<br><br> 
-		The Stacks will open on 04.26
-		<!-- <a href="https://drive.google.com/drive/folders/1J4O2DzwnS-muHgtJOtoZWUpnSfGTU-g_?usp=sharing">Visit The Stacks</a> -->
-		<br><br> 
-		<!-- <span class="end-line">-------------------------------------</span> -->
-	</li>
-	<li class="content">
 		<a href="https://hopin.to/events/the-book-fair" target="_blank"><span class="title">The Book Fair</a></span>
-		  (04.26, 2-6PM EST <svg height="9" width="9" class="blinking">
-  <circle cx="5" cy="5" r="4" fill="red" />
-</svg>) <br>
 		
-		<!-- – --><br><br>
-		The Book Fair is a quarterly lecture series where selected contributors to The Stacks talk about the inputs and inspirations that have had a significant impact on their lives and careers.
+		<br><br><br>
+		The Book Fair (04.26, 2-6PM EST <svg height="9" width="9" class="blinking"><circle cx="5" cy="5" r="4" fill="red" /></svg> )  is a quarterly lecture series where selected contributors to The Stacks talk about the inputs and inspirations that have had a significant impact on their lives and careers.
 		<br><br>
 		<video playsinline  autoplay loop muted> 
 		  <source src="images/book-fair-01.mp4" type="video/mp4">		  
 		</video>
-		<!-- <img id="" src="images/bf-01.png"> -->
 		<br><br>
-		  The Book Fair is open and free to the public. The virtual nature of these events are partly fueled by the situation we find ourselves in, partly because using the power of the web helps democratize these talks. After the virtual event the talks will be archived on The Stacks in their respective folders. Our first group of speakers on April 26th will be the partner at PLAYLAB Inc, <a href="https://www.playlab.org/" target="_blank">Archie Lee Coates IV</a>, illustrator & art director <a href="https://simonenoronha.com/" target="_blank">Simone Noronha</a>, award winning curator and writer <a href="https://sararaza.com/" target="_blank">Sara Raza</a>, and artist & partner at School - <a href="http://andrewherzog.com/" target="_blank">Andrew Herzog</a>.
+		The Book Fair is open and free to the public. The virtual nature of these events are partly fueled by the situation we find ourselves in, and partly because using the power of the web helps democratize these talks. After the virtual event, the talks will be archived on The Stacks in their respective folders. Our first group of speakers on April 26th will be cofounder & partner at PLAYLAB Inc -  <a href="https://www.playlab.org/" target="_blank">Archie Lee Coates IV</a>, illustrator & art director - <a href="https://simonenoronha.com/" target="_blank">Simone Noronha</a>, award winning curator & writer - <a href="https://sararaza.com/" target="_blank">Sara Raza</a>, and artist & partner at School - <a href="http://andrewherzog.com/" target="_blank">Andrew Herzog</a>.
 		<br><br> 
 		<a href="https://hopin.to/events/the-book-fair" target="_blank">RSVP for The Book Fair </a>	
 		<br><br> 
-		<!-- <span class="end-line">-------------------------------------</span>	 -->
+	</li>
+	<li class="content">
+		<span class="title">The Stacks</span>
+		<br><br><br>
+		The Stacks is a digital public archive of things recommended by working creatives for anyone to root through and find inspiration.
+		<br><br>
+		<video playsinline  autoplay loop muted> 
+		  <source src="images/stacks-01.mp4" type="video/mp4">		  
+		</video>
+		<br><br>
+		Those things (books, films, videos, art, lectures, places, and people) are organized into folders bearing the names of creatives who’ve filled them. We hope their content can act as a catalyst for inquiry and learning. Launching on April 26th, along with The Book Fair, the goal is to create an ever-evolving depository of inputs and inspirations that can offer an ever-growing source of insights for young creatives and lifelong students.
+		<br><br> 
+		The Stacks will open on 04.26
 	</li>
 	<li class="last content" >
-<br><br> 
-		<br> 
-		The Publik Library is a collaborative initiative by <a href="http://schoooool.com/" target="_blank">School</a>, <a href="http://andrewherzog.com/" target="_blank">Educated Guess</a>, and <a href="http://r-d.info/" target="_blank">Research + Development</a>.<br>
+		<br class="none"><br class="none"><br class="none"> 
+		The Publik Library is a collaborative initiative by <a href="http://schoooool.com/" target="_blank">School</a>, <a href="https://educated--guess.com/" target="_blank">Educated Guess</a>, and <a href="http://r-d.info/" target="_blank">Research + Development</a>.<br>
 		<br><br> 
-		<!-- <span class="end-line">-------------------------------------</span>
-		<br><br>  -->
 		<span class=""><a href="https://www.instagram.com/publik.library/" target="_blank">@publik.library</a>
 			<br><br> 
-		<!-- <span class="end-line">-------------------------------------</span> -->
 			<br><br>the.publik.library@gmail.com
-<!-- 
-			<br><br> 
-		<span class="end-line">-------------------------------------</span>	 -->
 	</li>
 	
 
 	<!-- row 03 -->
 
-	<li class="first">
-		<br><br>
-		
-	</li>
+	<li class="first"><br><br></li>
 	<li class="none"><br></li>
 	<li class="none"><br></li>
 	<li class="last none"><br></li>
-
-
 </ul>
+
+<!-- outside -->
+
 <p id="copyright"> ©(Y)ours 2020</p>
+
 </body>
 </html>	
