@@ -200,8 +200,8 @@ a{
 	}
 	#key{
 	position: fixed;
-	width: 10%; 
-	top: 82vh; 
+	/*width: 10%; */
+	bottom: 3vh; 
 	left: 2.5%; 
 	 text-transform: uppercase;
 }
