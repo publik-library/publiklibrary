@@ -159,6 +159,9 @@ a{
 #key{
 	position: fixed;
 	width: 10%; 
+	top: 82vh; 
+	left: 2.5%; 
+	 text-transform: uppercase;
 }
 #key p{
 	margin-bottom: 5px; 
