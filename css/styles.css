@@ -156,16 +156,7 @@ a{
 	background-color: #BFDFF6;
 	/*pink*/
 }
-#key{
-	position: fixed;
-	width: 10%; 
-	top: 82vh; 
-	left: 2.5%; 
-	 text-transform: uppercase;
-}
-#key p{
-	margin-bottom: 5px; 
-}
+
 	
 /*desktop styles*/
 @media screen and (min-width: 768px) {
@@ -207,6 +198,16 @@ a{
 		font-size: .9vw; 
 		color: grey; 
 	}
+	#key{
+	position: fixed;
+	width: 10%; 
+	top: 82vh; 
+	left: 2.5%; 
+	 text-transform: uppercase;
+}
+#key p{
+	margin-bottom: 5px; 
+}
 
 }
 /*mobile styles*/
@@ -238,4 +239,14 @@ text-align: justify;
 		font-size: 4vw; 
 		color: grey; 
 	}
+	#key{
+	position: relative;
+	width: 10%; 
+	left: 5%; 
+	margin-bottom: 5%; 
+	 text-transform: uppercase;
+}
+#key p{
+	margin-bottom: 5px; 
+}
 }
