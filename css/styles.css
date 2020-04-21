@@ -241,7 +241,7 @@ text-align: justify;
 	}
 	#key{
 	position: relative;
-	width: 10%; 
+	/*width: 10%; */
 	left: 5%; 
 	margin-bottom: 5%; 
 	 text-transform: uppercase;
