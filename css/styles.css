@@ -208,6 +208,9 @@ a{
 #key p{
 	margin-bottom: 5px; 
 }
+sup{
+	font-size: .7vw
+}
 
 }
 /*mobile styles*/
