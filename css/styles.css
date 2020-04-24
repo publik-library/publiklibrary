@@ -249,6 +249,7 @@ text-align: justify;
 	left: 5%; 
 	margin-bottom: 5%; 
 	 text-transform: uppercase;
+	 pointer-events:none;
 }
 #key p{
 	margin-bottom: 5px; 
