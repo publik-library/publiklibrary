@@ -204,6 +204,7 @@ a{
 	bottom: 3vh; 
 	left: 2.5%; 
 	 text-transform: uppercase;
+	 pointer-events:none;
 }
 #key p{
 	margin-bottom: 5px; 
@@ -251,5 +252,6 @@ text-align: justify;
 }
 #key p{
 	margin-bottom: 5px; 
+	pointer-events:none;
 }
 }
