@@ -76,6 +76,7 @@ a{
 	display: block;		
 	width: 100%; 
 	text-align: center;
+	margin-top: 40px;
 	}
 /*	.title{
 		font-family: baskerville;
@@ -182,7 +183,7 @@ a{
 
 	}
 	.content{
-		min-height: 110vh; 
+		/*min-height: 110vh; */
 	}
 	
 	.first{
@@ -210,24 +211,38 @@ a{
 	margin-bottom: 5px; 
 }
 sup{
-	font-size: .6vw
+	font-size: .75vw
 }
+	.divider{
+		width: 100%; 
+		height: .5vh; 
+		/*background-color: blue; */
+		display: block;
+		position: relative;
+	}
+	#toc{
+		position: fixed;
+		top: 15vh; 
+		left: 2.5%; 
+		/*text-transform: uppercase;*/
+		pointer-events:none;
 
+	}
 }
 /*mobile styles*/
 
 @media screen and (max-width: 769px) {
 li{
-		width: 90%; 
+		width: 92%; 
 		display: block; 
 		float: left; 
-		margin-left: 2.5%;
+		margin-left: 1.5%;
 		/*margin-right: 5%; */
 		/*min-height: 10vh; */
 		-webkit-hyphens: auto;
 	  -ms-hyphens: auto;
 	  hyphens: auto;
-	  margin-bottom: 20%; 
+	  margin-bottom: 12%;
 text-align: justify;
 	}
 	#pl-logo{
@@ -247,12 +262,25 @@ text-align: justify;
 	position: relative;
 	/*width: 10%; */
 	left: 5%; 
-	margin-bottom: 5%; 
+	margin-bottom: 0%; 
 	 text-transform: uppercase;
 	 pointer-events:none;
+	 /*height: 500px; */
 }
 #key p{
 	margin-bottom: 5px; 
 	pointer-events:none;
 }
+sup{
+	font-size: 4vw
+}
+	#toc{
+		position: relative;
+		/*top: 15vh; */
+		left: 5%; 
+		margin-bottom: 8vh; 
+		/*text-transform: uppercase;*/
+		pointer-events:none;
+
+	}
 }
