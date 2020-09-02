@@ -254,8 +254,15 @@ a{
 #bf6{
 	width: 30%;
     position: absolute;
-    left: 69vw;
+    left: 67vw;
     bottom: -.60vh;
+    z-index: 1000;
+}
+#bf7{
+	width: 6%;
+    position: absolute;
+    left: 93.5vw;
+    bottom: 2vh;
     z-index: 1000;
 }
 	.changeColor {
