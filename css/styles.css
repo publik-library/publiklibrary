@@ -223,15 +223,15 @@ a{
 #bf2{
 	width: 51%;
     position: absolute;
-    left: 28vw;
-    top: 30vh;
+    left: 29vw;
+    top: 32vh;
     /* transform: rotate(1deg); */
     z-index: 1000;
 }
 #bf3{
 	width: 45%;
     position: absolute;
-    left: 8vw;
+    left: 7vw;
     bottom: -.60vh;
     z-index: 1000;
 }
@@ -246,7 +246,7 @@ a{
 #bf5{
 	width: 10%;
     position: absolute;
-    left: 16vw;
+    left: 18vw;
     top: -3vh;
     /* transform: rotate(-15deg); */
     z-index: 1000;
