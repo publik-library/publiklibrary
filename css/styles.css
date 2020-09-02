@@ -21,7 +21,10 @@ time, mark, audio, video {
 }
 html{
 	scroll-behavior: smooth;
+			transition: 0.7s all;
+
 }
+
 
 #container1{
 	font-family: courier-new;
@@ -44,11 +47,14 @@ html{
 	padding-top: 1vh; 
 	margin-bottom: 2.5vh;
 }
+
 	body{
 		font-family: courier-new;
 		margin: 0px; 
 		overflow-x: hidden;
-		background-color: #F6F6F6; 
+		background: #ffcdc5;
+				transition: 1s all;
+
 		line-height: 22px; 
 	}
 	@font-face {
@@ -186,6 +192,77 @@ a{
 	
 /*desktop styles*/
 @media screen and (min-width: 768px) {
+/*#rsvp{
+	width: 10%;
+    top: 65vh;
+    left: 49vw;
+    position: absolute;
+    background: url("../images/rsvp-01.png") no-repeat;
+}*/
+
+
+ .rsvp {
+        width: 10%;
+    top: 61vh;
+    left: 48vw;
+    position: absolute;
+    cursor: pointer; 
+    }
+    .rsvp .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .rsvp:hover .img-top {
+        display: inline;
+    }
+
+
+#bf2{
+	width: 51%;
+    position: absolute;
+    left: 28vw;
+    top: 30vh;
+    /* transform: rotate(1deg); */
+    z-index: 1000;
+}
+#bf3{
+	width: 45%;
+    position: absolute;
+    left: 8vw;
+    bottom: -.60vh;
+    z-index: 1000;
+}
+#bf4{
+	width: 18%;
+    position: absolute;
+    left: 82vw;
+    top: 0vh;
+    /* transform: rotate(-15deg); */
+    z-index: 1000;
+}
+#bf5{
+	width: 10%;
+    position: absolute;
+    left: 16vw;
+    top: -3vh;
+    /* transform: rotate(-15deg); */
+    z-index: 1000;
+}
+#bf6{
+	width: 30%;
+    position: absolute;
+    left: 69vw;
+    bottom: -.60vh;
+    z-index: 1000;
+}
+	.changeColor {
+	   background-color: #F6F6F6; 
+	}
+
+
 
 		#pl-logo{
 		width: 20%; 
@@ -211,6 +288,17 @@ a{
 		/*min-height: 110vh; */
 	}
 	
+	.featured-content{
+		width: 100%;
+		display: block; 
+		float: left; 
+		margin-right: 3%; 
+		min-height: 79vh;
+		-webkit-hyphens: auto;
+	  -ms-hyphens: auto;
+	  hyphens: auto;
+		  text-align: justify;
+	}
 	.first{
 		/*margin-left: 2.5%; */
 	}
@@ -257,6 +345,28 @@ sup{
 /*mobile styles*/
 
 @media screen and (max-width: 769px) {
+	body{
+		background-color: #F6F6F6; 
+	}
+	#bf2{
+		display: none;
+	}
+	#bf3{
+		display: none;
+	}
+	#bf4{
+		display: none;
+	}
+	#bf5{
+		display: none;
+	}
+	#bf6{
+		display: none;
+	}
+	.featured-content{
+		display: none; 
+	}
+
 li{
 		width: 92%; 
 		display: block; 
